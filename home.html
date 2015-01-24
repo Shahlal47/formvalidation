@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        img{
+            width: 200px;
+            height: 170px;
+            float: left;
+        }
+        #img2{
+            width: 600px;
+            height: 500px;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <img class="thumbnail" src="image/1.jpg"  onclick="changeImage('1.jpg')">
+    <img class="thumbnail" src="image/2.jpg"  onclick="changeImage('2.jpg')">
+    <img  class="thumbnail" src="image/3.jpg"  onclick="changeImage('3.jpg')">
+    <img class="thumbnail"  src="image/4.jpg"  onclick="changeImage('4.jpg')">
+    <img class="thumbnail"  src="image/5.jpg"  onclick="changeImage('5.jpg')">
+
+    <img id="img2" class="thumbnail" src="image/1.jpg">
+</div>
+
+<script>
+
+    function changeImage(imgname)
+    {
+        image = document.getElementById('img2');
+        image.src = imgname;
+    }
+
+
+</script>
+
+</body>
+</html>
